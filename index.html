@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <h1 id="title"> Survey Form</h1>
+  <head>
+    <body>
+      <p id="description">Let us know how our college resource center can support you</p>
+     <form action="/action_page.php" id="survey-form" method="POST">
+<!--       <label for="name" id="name-label">Name:</label> -->
+       <input type="text"  name="full-name" placeholder="Your Full Name" id="name">
+      <label for="email" id="email-label">E-mail:<label>
+        <input type="email" id="email" name="email" placeholder="YourEmail@email.com">
+        <label for="age" id="number-label">Age:</label>
+        <input type="number" id="age" name="age" min="13" max="110" placeholder="13+">
+        
+        <fieldset name="student-status">
+          <legend>Student status:</legend>
+          <input id="prospective-student" type="radio" name="prospective-student">
+          <label for="prospective-student">Prospective</label>
+          <input id="current-student" type="radio" name="current-student" >
+          <label for="current-student">Current</label>
+          <input id="alumni-student" type="radio" name="alumni-student" >
+          <label for="alumni-student">Alumni</label>
+        </fieldset>
+        
+        
+        <fieldset>
+          <legend>What support do you need? (Select all that apply)</legend>
+        <input id="employment" type="checkbox" value="employment">
+          <label for="employment">Employment opportunities</label>
+        <input id="financial" type="checkbox" value="financial">
+          <label for="financial">Financial help</label>
+        <input id="health" type="checkbox" value="health">
+          <label for="health">Health</label>
+        <input id="alcohol" type="checkbox" value="alcohol">
+          <label for="alcohol">Alcohol treatment</label>
+        <input id="drug" type="checkbox" value="drug">
+          <label for="drug">Drug Treatment</label>
+        <input id="violence" type="checkbox" value="violence">
+         <label for="violence">Violence: Domestic/Bullying</label>
+        <input id="peer-pressure" type="checkbox" value="peer-pressure">
+          <label for="peer-pressure">Peer Pressure</label>
+        </fieldset>
+        <textarea placeholder="Add any additional comments here"></textarea>
+        <input type="submit" value="Submit">
+       </form>
+    </body>
+    
+</html>
