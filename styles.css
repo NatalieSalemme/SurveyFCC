@@ -1,0 +1,41 @@
+table, h3, h1 {
+  margin: auto;
+}
+h3, #submit, p {
+  text-align: center;
+  margin-top: 1em;
+}
+
+body {
+  background-image: url("https://st2.depositphotos.com/9223672/12081/v/950/depositphotos_120819408-stock-illustration-student-cap-graduation-hat-icon.jpg");
+  max-width: 700px;
+  min-width: 300px; 
+  margin: 3em 7em 7em 7em;
+  border: 7px solid black;
+}
+.container {
+  background-color: rgba(255, 128, 223, 0.98);;
+}
+h1 {
+  text-align: center;
+  padding-top: 1em;
+  color: #006080
+}
+#submit {
+  width: 15em;
+  height: 15em;
+  margin-bottom: 2em;
+}
+h3 {
+  color: #006080
+}
+table, #submit, #description {
+  color: #000099
+}
+textarea {
+width: 20em;
+height: 10em;
+}
+h5 {
+  float: right;
+}
