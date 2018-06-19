@@ -4,66 +4,107 @@
   <head> 
     <meta charset="UTF-8">
     <title>Survey Form</title>
-    <h1 id="title"> Survey Form</h1>
   <head>
     <body>
-      <p id="description">Let us know how our college resource center can support you</p>
+      <div class="container">
+        <h1 id="title"> Survey Form</h1>
+        <p id="description">Let us know how our college resource center can support you</p>
       
-     <form id="survey-form" >
+        <form id="survey-form" >
 <!--        action="/action_page.php" -->
 <!--        method="POST" -->
-       <fieldset>
-         <legend>Tell us about yourself: (asterisks are required)</legend>
- <label for="name" id="name-label">*Name:</label>
-       <input type="text" id= "name" name="full-name" placeholder="Your Full Name" required>
-      <label for="email" id="email-label">*E-mail:<label>
-        <input type="email" id="email" name="email" placeholder="YourEmail@email.com" required>
-        <label for="age" id="number-label">Age:</label>
-        <input type="number" id="number" name="age" min="13" max="110" placeholder="13+">
-        </fieldset>
-        
-        <fieldset>
-          <legend>Student status:</legend>
-          <input id="prospective" type="radio" name="status" value="prospective">
-          <label for="prospective">Prospective</label>
-          <input id="current" type="radio" name="status" value="current">
-          <label for="current">Current</label>
-          <input id="alumni" type="radio" name="status" value="alumni">
-          <label for="alumni">Alumni</label>
-        </fieldset> 
-        
-        <fieldset>
-          <legend>What support do you need? (Select all that apply)</legend>
-        <input id="employment" type="checkbox" value="employment">
-          <label for="employment">Employment opportunities</label>
-        <input id="financial" type="checkbox" value="financial">
-          <label for="financial">Financial help</label>
-        <input id="health" type="checkbox" value="health">
-          <label for="health">Health</label>
-        <input id="alcohol" type="checkbox" value="alcohol">
-          <label for="alcohol">Alcohol treatment</label>
-        <input id="drug" type="checkbox" value="drug">
-          <label for="drug">Drug Treatment</label>
-        <input id="violence" type="checkbox" value="violence">
-         <label for="violence">Violence: Domestic/Bullying</label>
-        <input id="peer-pressure" type="checkbox" value="peer-pressure">
-          <label for="peer-pressure">Peer Pressure</label>
-        </fieldset>
-        
-        <label for="gender">Gender</label>
-        <select name="gender" id="dropdown">
-          <option disable selected value="default">Please select</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="transgender-male">Transgender Male</option>
-          <option value="transgender-female">Transgender Female</option>
-          <option value="non-binary">Non-binary</option>
-          <option value="trans-umbrella">*Trans</option>
-          <option value="other">Other</option>
-        </select>
-      
-        <textarea placeholder="Add any additional comments here"></textarea>
-        <input type="submit" value="Submit" id="submit">
+        <table>
+         <tr><h3>Tell us about yourself:</h3></tr>
+         <tr>
+           <td><label for="name" id="name-label">*Name:</label></td>
+           <td><input type="text" id= "name" name="full-name" placeholder="Your Full Name" required></td>
+         </tr>
+         <tr>
+           <td><label for="email" id="email-label">*E-mail:<label></td>
+           <td><input type="email" id="email" name="email" placeholder="YourEmail@email.com" required></td>
+         </tr>
+        <tr>
+           <td><label for="age" id="number-label">Age:</label></td>
+           <td><input type="number" id="number" name="age" min="13" max="110" placeholder="13+"></td>
+         </tr>
+         <tr>
+           <td><label for="gender">Gender</label></td>
+           <td><select name="gender" id="dropdown">
+            <option disable selected value="default">Please select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="transgender-male">Transgender Male</option>
+            <option value="transgender-female">Transgender Female</option>
+            <option value="non-binary">Non-binary</option>
+            <option value="trans-umbrella">*Trans</option>
+            <option value="other">Other</option>
+            </select></td>
+          </tr>  
+       </table>  
+       <table>
+        <h3>Student status:</h3>
+         <tr>
+           <td><input id="prospective" type="radio" name="status" value="prospective">
+           <label for="prospective">Prospective</label></td>
+         </tr>
+         <tr>
+           <td><input id="current" type="radio" name="status" value="current">
+           <label for="current">Current</label></td>
+         </tr>
+         <tr>
+           <td><input id="alumni" type="radio" name="status" value="alumni">
+           <label for="alumni">Alumni</label></td>
+         </tr>
+        </table>
+        <table>
+         <tr>
+           <td><h3>What support do you need?</h3></td>
+         </tr>
+         <tr>
+           <td><p>*Select all that apply</p></td>
+         </tr> 
+         <tr>
+           <td> <input id="employment" type="checkbox" value="employment">
+           <label for="employment">Employment opportunities</label></td>
+         </tr>
+        <tr>
+          <td><input id="financial" type="checkbox" value="financial">
+          <label for="financial">Financial help</label></td>
+        </tr>
+        <tr>
+          <td><input id="health" type="checkbox" value="health">
+          <label for="health">Health</label></td>
+        </tr>
+        <tr>
+          <td><input id="alcohol" type="checkbox" value="alcohol">
+          <label for="alcohol">Alcohol treatment</label></td>
+        </tr>
+        <tr>
+          <td><input id="drug" type="checkbox" value="drug">
+          <label for="drug">Drug Treatment</label></td>
+        </tr>
+        <tr>
+          <td><input id="violence" type="checkbox" value="violence">
+          <label for="violence">Violence: Domestic/Bullying</label></td>
+        </tr>
+        <tr>
+          <td><input id="peer-pressure" type="checkbox" value="peer-pressure">
+          <label for="peer-pressure">Peer Pressure</label></td>
+        </tr>
+        </table>
+        <table>
+          <h3>Comments:</h3>
+          <tr>
+            <td><textarea placeholder="Add any additional comments here"></textarea></td>
+          </tr>
+          
+        </table>
+        <table>
+          <tr>
+            <td><input type="submit" value="Submit" id="submit"></td>
+          </tr>
+        </table>
        </form>
+      </div>
     </body>
 </html>
